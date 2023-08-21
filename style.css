@@ -1,0 +1,19 @@
+.visa-text {
+  font-family: helve-neue-thin, sans-serif;
+  font-size: 16px;
+  color: #365785;
+  line-height: 12px;
+  margin-bottom: 15px;
+}
+
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
