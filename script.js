@@ -68,7 +68,7 @@ btnSearch.addEventListener('click', function(){
                 resetButton()
                 resultTable.classList.remove('hide')
                 resultTable.innerHTML +=
-                  `<tbody>
+                  `
                     <tr>
                       <td>${things[i][1]['referenceNumber']}</td>
                       <td>${things[i][1]['passportNumber']}</td>
@@ -77,7 +77,7 @@ btnSearch.addEventListener('click', function(){
                       <td>${things[i][1]['visaValidity']}</td>
                       <td>${things[i][1]['visaStatus']}</td>
                     </tr> 
-                  </tbody>
+                  
                `
                break;
               } else {
