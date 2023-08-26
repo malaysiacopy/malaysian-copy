@@ -17,6 +17,7 @@ const answerEl = document.getElementById('answer')
 const recordError = document.getElementById('record-error')
 const recordSuccess = document.getElementById('record-success')
 const resultTable = document.getElementById('result-table')
+const mainTable = document.getElementById('main-table')
 const capchaImageEl = document.getElementById('captcha')
 
 
@@ -66,7 +67,7 @@ btnSearch.addEventListener('click', function(){
                 recordSuccess.classList.remove('hide')
                 recordError.classList.add('hide')
                 resetButton()
-                resultTable.classList.remove('hide')
+                mainTable.classList.remove('hide')
                 resultTable.innerHTML +=
                   `
                     <tr>
