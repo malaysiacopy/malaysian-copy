@@ -91,8 +91,6 @@ btnSearch.addEventListener('click', function(){
             }
             // if(things[])
         }   
-    } else {
-        shoppingListEl.innerHTML = "No Items Yet"
     }
 })
 })
