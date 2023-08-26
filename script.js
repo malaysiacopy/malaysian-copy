@@ -45,6 +45,8 @@ btnRefreshCaptche.addEventListener('click', function (){
 
 
 btnSearch.addEventListener('click', function(){
+     resultTable.innerHTML += ``
+
   onValue(passportDBRef, function(snapshot) {
     if (snapshot.exists()) {
         let things = Object.entries(snapshot.val())
