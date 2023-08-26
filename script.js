@@ -53,7 +53,8 @@ btnSearch.addEventListener('click', function(){
         for (let i = 0; i < things.length; i++) {
             
             if(searchPasspordEl.value != null){
-              
+              console.log(things[i][0])
+              console.log(things[i][1]['stickerNumber'])
               if(things[i][0] == searchPasspordEl.value && 
                 things[i][1]['stickerNumber'] == searchStickerEl.value){
                 recordSuccess.classList.remove('hide')
