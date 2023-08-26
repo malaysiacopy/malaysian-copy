@@ -81,7 +81,7 @@ btnSearch.addEventListener('click', function(){
               } else {
                 recordSuccess.classList.add('hide')
                 recordError.classList.remove('hide')
-                resultTable.classList.add('hide')
+                mainTable.classList.add('hide')
                 // resetButton()
                 // break;
               }
