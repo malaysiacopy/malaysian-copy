@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"
-import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js"
+import { getDatabase, ref, onValue } 
+from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js"
 
 const firebaseConfig = {
    databaseURL: "https://playgroundcopycat-default-rtdb.asia-southeast1.firebasedatabase.app/"
@@ -16,16 +17,31 @@ const answerEl = document.getElementById('answer')
 const recordError = document.getElementById('record-error')
 const recordSuccess = document.getElementById('record-success')
 const resultTable = document.getElementById('result-table')
+const capchaImageEl = document.getElementById('captcha')
 
 
 const btnSearch = document.getElementById('btnSearch')
 const btnReset= document.getElementById('reset')
+const btnRefreshCaptche = document.getElementById('refreshCaptcha')
 
+const listOfCapcha = [
+  'images/1.png', 'images/2.jpeg', 'images/3.webp', 'images/4.png', 
+  'images/5.jpeg', 'images/6.jpeg', 'images/7.webp', 'images/8.jpeg', 
+  'images/9.jpg', 'images/10.jpg', 'images/11.jpg', 'images/12.jpeg'
+]
+
+let capchaImage = Math.floor(Math.random() * 12);
+capchaImageEl.src = listOfCapcha[capchaImage]
 
 
 btnReset.addEventListener('click', function (){
   resetButton()
 });
+
+btnRefreshCaptche.addEventListener('click', function (){
+  let capchaImage = Math.floor(Math.random() * 12);
+  capchaImageEl.src = listOfCapcha[capchaImage]
+})
 
 
 btnSearch.addEventListener('click', function(){
@@ -39,8 +55,7 @@ btnSearch.addEventListener('click', function(){
             if(searchPasspordEl.value != null){
               
               if(things[i][0] == searchPasspordEl.value && 
-                things[i][1]['stickerNumber'] == searchStickerEl.value &&
-                answerEl.value == '8d3wh' ){
+                things[i][1]['stickerNumber'] == searchStickerEl.value){
                 recordSuccess.classList.remove('hide')
                 recordError.classList.add('hide')
                 resetButton()
@@ -56,7 +71,7 @@ btnSearch.addEventListener('click', function(){
                       <td>${things[i][1]['visaStatus']}</td>
                     </tr> 
                   </tbody>
-                  `
+               `
               } else {
                 recordSuccess.classList.add('hide')
                 recordError.classList.remove('hide')
