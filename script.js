@@ -13,7 +13,7 @@ const passportDBRef = ref(database, "Carts")
 
 const searchPasspordEl = document.getElementById('searchPassport')
 const searchStickerEl = document.getElementById('searchSticker')
-const answerEl = document.getElementById('answer')
+// const answerEl = document.getElementById('answer')
 const recordError = document.getElementById('record-error')
 const recordSuccess = document.getElementById('record-success')
 const resultTable = document.getElementById('result-table')
@@ -95,5 +95,5 @@ btnSearch.addEventListener('click', function(){
 function resetButton() {
   searchPasspordEl.value = ""
   searchStickerEl.value = ""
-  answerEl.value = ""
+  // answerEl.value = ""
 }
