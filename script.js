@@ -56,11 +56,11 @@ btnSearch.addEventListener('click', function(){
         for (let i = 0; i < things.length; i++) {
             
             if(searchPasspordEl.value != null){
-              console.log(i)
-              console.log(things[i][0])
-              console.log(things[i][1]['stickerNumber'])
-              console.log(searchPasspordEl.value)
-              console.log(searchStickerEl.value)
+              // console.log(i)
+              // console.log(things[i][0])
+              // console.log(things[i][1]['stickerNumber'])
+              // console.log(searchPasspordEl.value)
+              // console.log(searchStickerEl.value)
 
               if(things[i][0] == searchPasspordEl.value && 
                 things[i][1]['stickerNumber'] == searchStickerEl.value){
