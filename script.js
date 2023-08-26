@@ -69,17 +69,14 @@ btnSearch.addEventListener('click', function(){
                 resetButton()
                 mainTable.classList.remove('hide')
                 resultTable.innerHTML +=
-                  `
-                    <tr>
+                  ` <tr>
                       <td>${things[i][1]['referenceNumber']}</td>
                       <td>${things[i][1]['passportNumber']}</td>
                       <td style="color: green;">${things[i][1]['applicationStatus']}</td>
                       <td>${things[i][1]['placeOfIssue']}</td>
                       <td>${things[i][1]['visaValidity']}</td>
                       <td style="color: green;">${things[i][1]['visaStatus']}</td>
-                    </tr> 
-                  
-               `
+                    </tr> `
                break;
               } else {
                 recordSuccess.classList.add('hide')
