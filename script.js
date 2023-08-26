@@ -77,11 +77,13 @@ btnSearch.addEventListener('click', function(){
                     </tr> 
                   </tbody>
                `
+               break;
               } else {
                 recordSuccess.classList.add('hide')
                 recordError.classList.remove('hide')
                 resultTable.classList.add('hide')
                 resetButton()
+                break;
               }
             }
             // if(things[])
