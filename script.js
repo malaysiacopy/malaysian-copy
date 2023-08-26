@@ -72,10 +72,10 @@ btnSearch.addEventListener('click', function(){
                     <tr>
                       <td>${things[i][1]['referenceNumber']}</td>
                       <td>${things[i][1]['passportNumber']}</td>
-                      <td>${things[i][1]['applicationStatus']}</td>
+                      <td style="color: green;">${things[i][1]['applicationStatus']}</td>
                       <td>${things[i][1]['placeOfIssue']}</td>
                       <td>${things[i][1]['visaValidity']}</td>
-                      <td>${things[i][1]['visaStatus']}</td>
+                      <td style="color: green;">${things[i][1]['visaStatus']}</td>
                     </tr> 
                   
                `
