@@ -62,7 +62,7 @@ btnSearch.addEventListener('click', function(){
               // console.log(searchPasspordEl.value)
               // console.log(searchStickerEl.value)
 
-              if(things[i][0] == searchPasspordEl.value){
+              if(things[i][1]['passportNumber'] == searchPasspordEl.value){
                 recordSuccess.classList.remove('hide')
                 recordError.classList.add('hide')
                 resetButton()
